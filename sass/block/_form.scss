@@ -1,0 +1,31 @@
+
+.contact-form{
+    background:white;
+    .gf_stylespro .gf_progressbar_title, .gf_stylespro .gsection_title{
+        font-size:20px;
+        font-weight:700;
+    }
+    .gf_stylespro.sp_material {
+        font-family: 'Spoqa Han Sans';
+        color: $color__brand;
+        font-size: 14px;
+    }
+    .gf_stylespro.sp_material .button, .gf_stylespro.sp_material .gfield_label{
+        font-family: 'Spoqa Han Sans';
+        color: $color__brand;
+    }
+    .gf_stylespro.sp_material .button.gform_button{
+        font-size:16px;
+    }
+}
+
+
+@media (max-width: 992px) {
+     .contact-form {
+        padding:0 16px;
+        .gf_stylespro .gf_progressbar_title, .gf_stylespro .gsection_title{
+            font-size:18px;
+        }
+
+    }
+}

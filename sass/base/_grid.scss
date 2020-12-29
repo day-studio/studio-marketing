@@ -1,0 +1,219 @@
+
+.dbd-container-fluid {
+	margin-left: 45px;
+	margin-right: 45px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: auto;
+
+	&:before {
+		@include clearfix();
+	}
+
+	&:after {
+		@include clearfix();
+		@include clearfix-after();
+	}
+}
+
+// .dbd-container {
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+// 	width: 1430px;
+
+// 	&:before {
+// 		@include clearfix();
+// 	}
+
+// 	&:after {
+// 		@include clearfix();
+// 		@include clearfix-after();
+// 	}
+// }
+
+
+
+// @media (max-width: 1440px) {
+// 	.dbd-container {
+// 		width: auto;
+// 		max-width: 100%;
+// 		margin-left: 45px;
+// 		margin-right: 45px;
+// 	}
+// }
+
+// @media (max-width: 1199px) {
+// 	.dbd-container,
+// 	.dbd-container-fluid {
+// 		margin-left: 25px;
+// 		margin-right: 25px;
+// 	}
+// }
+
+@media (max-width: 991px) {
+	// .container {
+	// 	width: auto;
+	// 	margin-left: 25px;
+	// 	margin-right: 25px;
+	// }
+
+	// .dbd-container,
+	// .dbd-container-fluid {
+	// 	margin-left: 25px;
+	// 	margin-right: 25px;
+	// }
+
+
+	.footer-widgets {
+		.footer-widgets-area {
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 60px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// @media (max-width: 767px) {
+// 	.container {
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		padding-left: 20px;
+// 		padding-right: 20px;
+// 	}
+
+// 	.dbd-container,
+// 	.dbd-container-fluid {
+// 		margin-left: 5px;
+// 		margin-right: 5px;
+// 	}
+// }
+
+
+@media (min-width: 1200px) {
+	.header-mobile {
+		display: none;
+	}
+
+	.mobile-menu-panel {
+		display: none !important;
+	}
+}
+
+.no-sidebar.single-post {
+	.content-area {
+		max-width: 750px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.sidebar-left,
+.sidebar-right {
+	.content-area {
+		width: (750/1140) * 100%;
+	}
+
+	.widget-area {
+		width: (390/1140) * 100%;
+	}
+
+	&.single-post {
+		.widget-area {
+			padding-top: 35px;
+		}
+	}
+
+	.dbd-container {
+		.content-area {
+			width: 1040/1400*100%;
+		}
+
+		.widget-area {
+			width: 360/1400*100%;
+		}
+	}
+}
+
+.sidebar-left {
+	.content-area {
+		float: right;
+	}
+
+	.widget-area {
+		float: left;
+		padding-right: 60px;
+	}
+
+	.dbd-container .widget-area {
+		padding-right: 80px;
+	}
+}
+
+.sidebar-right {
+	.content-area {
+		float: left;
+	}
+
+	.widget-area {
+		float: right;
+		padding-left: 60px;
+	}
+
+	.dbd-container .widget-area {
+		padding-left: 80px;
+	}
+}
+
+.empty-sidebar {
+	&.sidebar-left,
+	&.sidebar-right {
+		.content-area,
+		.widget-area {
+			width: auto;
+			float: none;
+		}
+	}
+
+	&.single-post .content-area {
+		max-width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.entry-header .post-info {
+		max-width: 780px;
+	}
+}
+
+.site-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	.no-top-spacing & {
+		padding-top: 0 !important;
+	}
+
+	.no-bottom-spacing & {
+		padding-bottom: 0 !important;
+    }
+}
+
+.header-vertical {
+	.site {
+		padding-left: 360px;
+	}
+
+	.container,
+	.container-fluid,
+	.dbd-container,
+	.dbd-container-fluid {
+		max-width: 100%;
+	}
+}

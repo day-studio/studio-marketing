@@ -1,0 +1,75 @@
+
+
+html{
+    font-size:16px;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+img{max-width:100%;height:auto;}
+
+$color__brand: #008ED6;
+$color__accent: #009966;
+$color__purple : #5B77CC;
+
+$color__yellow : #FFD100;
+$color__lightgreen:#78BE20;
+$color__lightblue:#00B5E2;
+$color__darkblue:#002f6c;
+$color__midblue:#0072a6;
+$color__darkpurple:#5C068C;
+$color__brown:#5A4522;
+$color__lightgray:#A7A8AA;
+
+$color__darker: #000;
+$color__dark: #161619;
+$color__gray: #666;
+$color__light: #cdcfd0;
+$color__lighter: #e1e6f5;
+
+$color__lightest: #f5f5f5;
+
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Underline hover
+@mixin underline-hover() {
+	line-height: 1;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 8px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		border-bottom: 1px solid;
+		transition: width 0.4s;
+	}
+
+	&:hover:after,
+	&.active:after {
+		width: 100%;
+		left: 0;
+	}
+}

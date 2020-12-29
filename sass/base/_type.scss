@@ -1,0 +1,94 @@
+
+
+
+.serif{
+	font-family: 'Playfair Display', 'Noto Serif KR', serif;
+	letter-spacing:-2px;
+}
+p.serif, .serif p{
+	letter-spacing:-1px;
+
+}
+
+@mixin serif {
+	font-family: 'Playfair Display', 'Noto Serif KR',serif;
+	letter-spacing:-2px;
+}
+
+body{
+	font-family: navigo, rixsingose-pro, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	line-height:1.55556;
+	@include font-size(16/16);
+	font-weight: 400;
+    word-break: keep-all;
+	color: $color__dark;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	margin:0;
+}
+
+p{
+	margin:0;
+}
+
+ul{
+	margin:0;
+}
+
+h1 {
+	@include font-size(50/16);
+}
+
+h2 {
+	@include font-size(32/16);
+}
+
+h3 {
+	@include font-size(28/16);
+}
+
+h4 {
+	@include font-size(22/16);
+}
+
+h5 {
+	@include font-size(18/16);
+}
+
+h6 {
+	@include font-size(16/16);
+}
+
+
+@media (max-width: 992px) {
+	 body  {
+		font-size:16px;
+	}
+	h2{
+		font-size:30px;
+	}
+	h3{
+		font-size:24px;
+	}
+	h4{
+		font-size:20px;
+		margin-bottom:16px;
+	}
+}
+
+
+a {
+	color: $color__dark;
+	text-decoration: none;
+	transition: 0.3s ease-in;
+	&:focus,
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
