@@ -1,0 +1,19 @@
+.wp-block{
+    max-width:960px;
+}
+
+.editor-post-title .editor-post-title__input{
+    font-size:24px;
+}
+
+body #editor .block-editor-writing-flow__click-redirect{
+    min-height:0;
+}
+
+body{
+    #poststuff .postbox-container{
+        max-width:960px;
+        margin:0 auto;
+        float:none;
+    }
+}

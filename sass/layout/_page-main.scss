@@ -3,9 +3,7 @@ section{
     // border-bottom:1px solid $color__lighter;
     .section-title{
         margin-bottom:2rem;
-        h2,h3{
-            color:$color__midblue;
-        }
+
 
     }
 }
@@ -14,12 +12,9 @@ main{
     padding-top:50px;
     padding-bottom:50px;
     section{
-        
-        h2{
-            color:$color__midblue;
-        }
+
         h4,h5{
-            color:$color__darkblue;
+
             margin:10px 0;
         }
         ul{

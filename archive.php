@@ -5,6 +5,7 @@
 
 get_header();
 ?>
+<?php get_template_part( 'template-parts/page-header'); ?>
     <main >
         <section>
             <div class="container-lg">
@@ -14,7 +15,6 @@ get_header();
                         <table class="table">
                             <thead>
                                 <tr>
-
                                     <th>
                                         제목
                                     </th>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,SAAS,EAAC,KAAK;CAClB;;AAED,AAAA,kBAAkB,CAAC,yBAAyB,CAAA;EACxC,SAAS,EAAC,IAAI;CACjB;;AAED,AAAA,IAAI,CAAC,OAAO,CAAC,0CAA0C,CAAA;EACnD,UAAU,EAAC,CAAC;CACf;;AAED,AACI,IADA,CACA,UAAU,CAAC,kBAAkB,CAAA;EACzB,SAAS,EAAC,KAAK;EACf,MAAM,EAAC,MAAM;EACb,KAAK,EAAC,IAAI;CACb",
+    "sources": [
+        "gutenberg-editor-style.scss"
+    ],
+    "names": [],
+    "file": "gutenberg-editor-style.css"
+}

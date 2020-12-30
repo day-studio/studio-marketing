@@ -11,7 +11,6 @@ get_header();
 ?>
 <?php get_template_part( 'template-parts/page-header'); ?>
 <main>
-    
     <section>
         <div class="container">
             <div class="row">

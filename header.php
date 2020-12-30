@@ -22,7 +22,7 @@ $www = get_stylesheet_directory_uri();
     <header class="site-header light text-dark">
             <div class="header-main no-center">
                 <div class="container">
-                    <div class="header-left-items header-items has-menu">
+                    <div class="header-left-items header-items">
 
                         <div class="site-branding">
                             <a href="<?php echo site_url(); ?>" class="logo">
@@ -41,7 +41,19 @@ $www = get_stylesheet_directory_uri();
 
                     </div>
 
-                    <div class="header-right-items header-items">
+                    <div class="header-right-items header-items  has-menu">
+
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location' => 'secondary_menu',
+                                'depth'             => 2,
+                                'container'         => 'nav',
+                                'container_class'   => 'main-navigation',
+                                'menu_class'        => 'nav-menu'
+                            ) );
+                        ?>
+
+
                     </div>
                 </div>
             </div>
