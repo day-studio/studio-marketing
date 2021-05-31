@@ -1,0 +1,40 @@
+
+body{
+	font-family: neue-haas-grotesk-display, 'rixsingose-pro', sans-serif;
+	font-size: calc( 0.1vw + 1.6rem);
+	word-break: keep-all;
+	font-weight: 400;
+}
+
+.serif{
+	font-family: questa-grande, serif;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{line-height:1.5; margin-top:0rem; margin-bottom:0vw;}
+h1,h2,h3{letter-spacing:-1px;font-weight:500;}
+h4,h5,h6{letter-spacing:-0.2px;font-weight:500;}
+
+h1{font-size:calc( 3vw + 3rem) ;}
+h2{font-size:calc( 4vw + 2rem) ;}
+h3{font-size:calc( 3.2vw + 1.8rem) ;}
+h4{font-size:calc( 1.0vw + 1.6rem) ;}
+h5{font-size:calc( 0.7vw + 1.5rem) ;}
+h6{font-size:calc( 0.5vw + 1.4rem) ;}
+
+p{font-size: calc( 0.4vw + 1.5rem);line-height: 1.5; margin-bottom:0;}
+li.sm, a.sm, p.sm{font-size:calc( 0.2vw + 1.2rem) ;line-height: calc( 1.0vw + 1.0rem); }
+
+a{color:var(--black) ;text-decoration:none;}
+a:hover{color:var(--black);text-decoration:none;}
+
+
+strong{
+	font-weight:600;
+}
+
+
+
+.italic{
+	font-style: italic;
+}

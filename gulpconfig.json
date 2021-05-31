@@ -1,0 +1,21 @@
+{
+	"browserSyncOptions": {
+		"proxy": "studiodaystudio.local/",
+		"notify": false,
+		"files": ["./css/*.css", "./js/*.js", "./src/js/*.js", "./**/*.php"]
+	},
+	"paths": {
+		"js": "./js",
+		"css": "./css",
+		"fonts": "./fonts",
+		"img": "./images",
+		"imgsrc": "./src/images",
+		"sass": "./sass",
+		"node": "./node_modules",
+		"composer": "./vendor",
+		"vendors": "./vendors",
+		"dev": "./src",
+		"dist": "./dist",
+		"distprod": "./dist-product"
+	}
+}

@@ -1,0 +1,34 @@
+
+.hamburger-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    transform:translateY(-100%);
+    .menu-container{
+        width:100%;
+        margin: 4rem 0 2.5rem;
+        ul{
+            li{
+                text-align:center;
+                a{
+                    font-size:calc( 1.0vw + 1.6rem);
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    font-weight:400;
+                    padding:16px 0;
+                    line-height:1;
+                    // text-transform:uppercase;
+                }
+            }
+        }
+
+    }
+ 
+}

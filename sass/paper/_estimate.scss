@@ -1,0 +1,295 @@
+
+// main.sheet{
+//     position:relative;
+//     font-size:13px;
+//     p,li{
+//         font-size:13px;
+
+//     }
+
+// }
+
+// .estimate-header{
+//     text-align:right;
+//     .logo{
+//         font-size:20px;
+//         font-weight:600;
+//         position:relative;
+//     }
+// }
+
+// main.sheet .estimate-footer{
+//     position:absolute;
+//     bottom:0;
+//     left:0;
+//     width:100%;
+//     padding:15mm 10mm;
+//     font-size:11px;
+//     p{
+//         font-size:11px;
+//     }
+//     ul.contact{
+//         list-style:none;
+//         padding:0;
+//         li{font-size:11px;
+//             span{
+
+//                 display:inline-block;
+//                 width:24px;
+//                 font-weight:600;
+//             }
+//         }
+//     }
+//     .addr{
+//         position:relative;
+//         .stamp{
+//             position:absolute;
+//             width:64px;
+//             height:64px;
+//             bottom:-8px;
+//             right:12px;
+//         }
+//         h6{
+//             font-size:12px;
+//             font-weight:600;
+//             margin-bottom:4px;
+//         }
+//     }
+// }
+
+
+// .cover{
+
+//     .estimate-main{
+//         display: flex;
+//         align-items: center;
+//         height:calc(100% - 15mm);
+//         .title{
+//             margin-bottom:40px;
+//             font-weight:600;
+//             font-size:32px;
+//         }
+//         .info{
+//             list-style:none;
+//             padding:0;
+//             li{
+//                 font-size:14px;
+//                 margin-bottom:4px;
+//             }
+//         }
+//         .date{
+//             margin-top:32px;
+//             font-size:14px;
+//         }
+//     }
+//     .estimate-footer{
+//         .stamp{
+//             display:none;
+//         }
+//     }
+// }
+
+// .estimate-main{
+//    .client{
+//        padding-top:100px;
+//        padding-bottom:32px;
+//        h6{
+//            font-weight:600;
+//            font-size:14px;
+//        }
+//        ul{
+//            list-style: none;
+//            padding:0;
+//            li{
+//                 line-height:1.75;
+//            }
+//        }
+//    }
+//    .detail{
+//         .side{
+//             padding-top:12px;
+//             font-size:14px;
+//             .date{
+//                 margin-top:24px;
+//             }
+//         }
+//         .table{
+//             th,td{
+//                 padding:0.5rem;
+//             }
+//             th{
+//                 min-width:100px;
+//             }
+//             ul{
+//                 margin-top:8px;
+//                 padding-left:20px;
+//             }
+//             .cost{
+//                 text-align:right;
+//             }
+//         }
+//         .misc{
+//             margin-top:24px;
+//             padding:10px;
+//             background:#f0f0f0;
+//         }
+//     }
+// }
+
+// .estimate_memo{
+//     margin-top:32px;
+//     padding:1rem;
+//     border:1px solid #000;
+//     ul{
+//         margin-bottom:0;
+//         margin-left:0px;
+//     }
+// }
+
+
+
+main.sheet{
+    position:relative;
+    font-size:12px;
+}
+.estimate-header{
+    text-align:right;
+    .logo{
+        font-size:20px;
+        font-weight:600;
+        position:relative;
+        img{
+            width:50px;
+        }
+    }
+}
+.estimate-proposal{
+
+    // border:1px solid #ccc;
+    padding-top:100px;
+    h5{
+        margin-top:2rem;
+        font-size:14px;
+    }
+}
+.estimate-footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:15mm 10mm;
+    font-size:11px;
+    ul.contact{
+        list-style:none;
+        padding:0;
+        li{
+            span{
+                display:inline-block;
+                width:24px;
+                font-weight:600;
+            }
+        }
+    }
+    .addr{
+        position:relative;
+        .stamp{
+            position:absolute;
+            width:64px;
+            height:64px;
+            bottom:-8px;
+            right:12px;
+        }
+        h6{
+            font-size:12px;
+            font-weight:600;
+            margin-bottom:4px;
+        }
+    }
+}
+
+
+.cover{
+    .estimate-main{
+        display: flex;
+        align-items: center;
+        height:calc(100% - 15mm);
+        .title{
+            margin-bottom:40px;
+            font-weight:600;
+        }
+        .info{
+            list-style:none;
+            padding:0;
+            li{
+                font-size:14px;
+                margin-bottom:4px;
+            }
+        }
+        .date{
+            margin-top:32px;
+            font-size:14px;
+        }
+    }
+    .estimate-footer{
+        .stamp{
+            display:none;
+        }
+    }
+}
+
+.estimate-main{
+   .client{
+       padding-top:100px;
+       padding-bottom:32px;
+       h6{
+           font-weight:600;
+           font-size:14px;
+       }
+       ul{
+           list-style: none;
+           padding:0;
+           li{
+                line-height:1.75;
+           }
+       }
+   }
+   .detail{
+        .side{
+            padding-top:12px;
+            font-size:14px;
+            .date{
+                margin-top:24px;
+            }
+        }
+        .table{
+            td,th{
+                padding:0.5rem;
+            }
+            p{
+                margin:0;
+            }
+            ul{
+                margin-top:4px;
+                padding-left:20px;
+                margin-bottom:0;
+            }
+            .cost{
+                text-align:right;
+            }
+        }
+        .misc{
+            margin-top:24px;
+            padding:10px;
+            background:#f0f0f0;
+        }
+    }
+}
+
+.estimate_memo{
+    margin-top:1rem;
+    border:1px solid #ccc;
+    padding:1rem;
+    ul{
+        margin-bottom:0;
+    }
+}

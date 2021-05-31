@@ -5,7 +5,13 @@
 
 get_header();
 ?>
-<?php get_template_part( 'template-parts/page-header'); ?>
+
+    <div class="page-header">
+        <div class="container">
+            <h1><?php post_type_archive_title(); ?></h1>
+        </div>
+
+    </div>
     <main >
         <section>
             <div class="container-lg">

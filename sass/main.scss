@@ -1,37 +1,39 @@
-/*base*/
-@import "./base/normalize";
-@import "./base/init";  
-@import "./base/type";
-@import "./base/grid";
-@import "./base/misc";
+html.wf-loading * {
+    opacity: 0;
+}
 
-@import "./block/buttons";
-@import "./block/form";
-/*layout*/
-@import "./layout/site-header";
-@import "./layout/site-header-mobile";
-@import "./layout/site-footer";
+// @import './base/_cursor.scss';
+@import './base/_init.scss';
+@import './base/_scroll.scss';
+@import './base/_typography.scss';
 
-@import "./layout/page-header";
-@import "./layout/page-main";
+@import './component/_component.scss';
 
 
-/*loop**/
-@import "./loop/loop";
+// @import './layout/_loader.scss';
+// @import './layout/_page-header.scss';
+@import './layout/_page-main.scss';
+@import './layout/_panel.scss';
+@import './layout/_site-footer.scss';
+@import './layout/_site-header.scss';
+
+@import './page/_archive-project.scss';
+@import './page/_page-about.scss';
+@import './page/_page-contact.scss';
+@import './page/_page-home.scss';
+@import './page/_proposal.scss';
 
 
-/*nav**/
-@import "./nav/menu";
-@import "./nav/paging";
-@import "./nav/primary-menu";
-@import "./nav/hamburger";
+// @import "./paper/estimate";
+// @import "./paper/presentation";
+// @import "./page/proposal";
 
 
 
-/*parts**/
-@import "./page/page";
-@import "./page/home";
-@import "./page/archive";
-@import "./page/estimate";
-@import "./page/presentation";
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
 

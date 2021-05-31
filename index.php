@@ -9,8 +9,8 @@ get_header();
 
 
 ?>
-<?php get_template_part( 'template-parts/page-header'); ?>
-<main>
+
+<main class="post">
     <section>
         <div class="container">
             <div class="row">
@@ -20,16 +20,10 @@ get_header();
                     <h3>
                         <?php the_title(); ?>
                     </h3>
+                    <?php the_content(); ?>
                 </div>
                 <?php endwhile; ?>
-                <div class="col-md-12">
-                    <?php 
-                        the_posts_pagination(array(
-                            'prev_text' =>'Previous',
-                            'next_text' =>'Next',
-                        ));
-                    ?>
-                </div>
+
                 <?php else : ?>
                 no post
                 <?php endif; ?>

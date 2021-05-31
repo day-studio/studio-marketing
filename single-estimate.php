@@ -16,7 +16,7 @@ get_header('paper');
     <?php get_template_part( 'template-parts/estimate-header'); ?>
     <div class="estimate-main">
         <div class="abstract">
-            <h3 class="title">project estimate</h3>
+            <h3 class="title">Project estimate</h3>
             <ul class="info">
                 <li>데이스튜디오</li>
                 <li><?php the_title(); ?></li>
@@ -27,6 +27,8 @@ get_header('paper');
     <?php get_template_part( 'template-parts/estimate-footer'); ?>
 </main>
 
+
+
 <main class="sheet padding-10mm">
     <?php get_template_part( 'template-parts/estimate-header'); ?>
     <div class="estimate-main">
@@ -36,16 +38,19 @@ get_header('paper');
             </div>
             <div class="col-9">
                 <ul>
-                    <li><?php the_field('client_name'); ?></li>
-                    <li><?php the_field('client_company'); ?></li>
-                    <li><?php the_field('client_contact'); ?></li>
+                    <li><?php the_field('estimate_client_name'); ?></li>
+                    <li><?php the_field('estimate_client_company'); ?></li>
+                    <li><?php the_field('estimate_client_contact'); ?></li>
                 </ul>
             </div>
         </div>
         <div class="row detail">
             <div class="col-3">
                 <div class="side">
-                    <p><strong>웹사이트 구축 <br>견적서</strong></p>
+                    <p><strong> 
+                        <?php the_title(); ?>
+                    
+                    </strong></p>
                     <p class="date"><?php echo get_the_date('Y.m.d'); ?></p>
                 </div>
             </div>
@@ -59,17 +64,17 @@ get_header('paper');
                         </tr>
                     </thead>
                     <tbody id="spec">
-                        <?php if( have_rows('spec') ): ?>
+                        <?php if( have_rows('estimate_spec') ): ?>
                             <?php $subTotal = 0 ?>
-                            <?php while( have_rows('spec') ): the_row(); ?>
+                            <?php while( have_rows('estimate_spec') ): the_row(); ?>
                                 
                                 <tr >
-                                    <th><?php the_sub_field('title'); ?></th>
-                                    <td><?php the_sub_field('desc'); ?></td>
+                                    <th><?php the_sub_field('spec_title'); ?></th>
+                                    <td><?php the_sub_field('spec_desc'); ?></td>
                                     <td class="cost">
 
                                         <?php 
-                                            $price = get_sub_field('price');
+                                            $price = get_sub_field('spec_price');
                                             $subTotal = $subTotal + $price;
                                             $formattedPrice = number_format($price);
                                             echo $formattedPrice;
@@ -108,9 +113,9 @@ get_header('paper');
                         </tr>
                     </tfoot>
                 </table>
-                <?php if(get_field('misc')) : ?>
-                    <div class="misc">
-                        <?php the_field('misc') ?>
+                <?php if(get_field('estimate_memo')) : ?>
+                    <div class="estimate_memo">
+                        <?php the_field('estimate_memo') ?>
                     </div>
                 <?php endif; ?>
             </div>
@@ -118,6 +123,23 @@ get_header('paper');
     </div>
     <?php get_template_part( 'template-parts/estimate-footer'); ?>
 </main>
+
+<?php if(get_field('estimate_proposal')) :  ?>
+
+<main class="sheet padding-10mm cover">
+    <?php get_template_part( 'template-parts/estimate-header'); ?>
+    <div class="estimate-proposal">
+        <div class="row">
+            <div class="col-lg-12">
+            <?php the_field('estimate_proposal') ?>
+            </div>
+        </div>
+    </div>
+    <?php get_template_part( 'template-parts/estimate-footer'); ?>
+</main>
+<?php endif; ?>
+
+
 <?php endwhile; ?>
 <?php else : ?>
 no post

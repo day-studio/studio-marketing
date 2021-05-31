@@ -5,7 +5,7 @@
         <div class="col-3 offset-3">
             <div class="addr">
                 <h6>daystudio</h6>
-                <p>#1208, 2621, Nambusunhwan-ro, Gangnam-gu, Seoul, Korea</p>
+                <p>#1218, 2621, Nambusunhwan-ro, Gangnam-gu, Seoul, Korea</p>
             </div>
         </div>
         <div class="col-3">
@@ -17,9 +17,9 @@
         </div>
         <div class="col-3">
             <div class="addr">
-                <img class="stamp" src="<?php echo $www;?>/images/ic_stamp.png" alt="">
+
                 <h6>데이스튜디오</h6>
-                <p>서울시 강남구 남부순환로 2621 에스앤아이 강남빌딩 1208호</p>
+                <p>서울시 강남구 남부순환로 2621 에스앤아이 강남빌딩 1218호</p>
             </div>
         </div>
     </div>

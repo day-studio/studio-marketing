@@ -1,0 +1,26 @@
+ul.nav-proposal{
+    margin:0;
+    padding:0 2rem 0 0;
+
+    li{
+        list-style:none;
+        margin:0;
+        border-bottom:1px solid #ccc;
+        padding:0.5rem 0;
+        a{
+            display: block;
+        }
+        .client{
+
+        }
+        .title{
+            color:grey;
+            font-size:0.9rem;
+        }
+        .price{
+            color:black;
+            font-weight:black;
+            font-weight:bold;
+        }
+    }
+}
